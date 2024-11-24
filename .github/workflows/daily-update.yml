@@ -1,0 +1,33 @@
+name: Daily LeetCode to Notion Update
+
+on:
+  schedule:
+    # Schedule to run at 00:00 UTC every day
+    - cron: "0 0 * * *"
+
+jobs:
+  update-notion:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Run the script
+      - name: Run Notion Update Script
+        run: node index.js
+        env:
+          LEETCODE_USERNAME: "msn2106"
+          NOTION_API_KEY: "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"
+          NOTION_DATABASE_NAME: "LeetCode Problems"
