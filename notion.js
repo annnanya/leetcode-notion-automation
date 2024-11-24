@@ -15,7 +15,7 @@ async function getOrCreateNotionDatabase() {
     // Create new database
     const response = await notion.databases.create({
       parent: { type: "page_id", page_id: config.notionParentPageId },
-      title: [{ type: "text", text: { content: NOTION_DATABASE_NAME } }],
+      title: [{ type: "text", text: { content: config.NOTION_DATABASE_NAME } }],
       properties: {
         Name: { title: {} },
         Link: { url: {} },
