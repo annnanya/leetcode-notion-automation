@@ -1,7 +1,6 @@
 name: Daily LeetCode to Notion Update
 
 on:
-  workflow_dispatch:
   schedule:
     # Schedule to run at 00:00 UTC every day
     - cron: "0 0 * * *"
