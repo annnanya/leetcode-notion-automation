@@ -1,0 +1,30 @@
+{
+  "name": "leetcode-notion-automation",
+  "version": "1.0.0",
+  "description": "LeetCode Submission Automatic Addition to Notion Table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msn2106/leetcode-notion-automation.git"
+  },
+  "keywords": [
+    "LeetCode",
+    "Notion",
+    "Automation",
+    "Submission"
+  ],
+  "author": "Mayank Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msn2106/leetcode-notion-automation/issues"
+  },
+  "homepage": "https://github.com/msn2106/leetcode-notion-automation#readme",
+  "dependencies": {
+    "@notionhq/client": "2.2.15",
+    "axios": "1.7.7"
+  }
+}
